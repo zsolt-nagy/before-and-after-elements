@@ -1,0 +1,38 @@
+.title {
+    border: 2px dotted red;
+}
+
+.title::before {
+    content: open-quote;
+}
+
+.title::after {
+    content: close-quote;
+}
+
+.title:hover {
+    background-color: gold;
+}
+
+[type=checkbox] {
+    position: absolute; 
+    left: -9999px;
+}
+
+label {
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+[type="checkbox"] ~ label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./images/checkbox-unchecked.png);
+    background-size: contain;
+}
+
+[type="checkbox"]:checked ~ label::before {
+    background-image: url(./images/checkbox-checked.png);
+}
