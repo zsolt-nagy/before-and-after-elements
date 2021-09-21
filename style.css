@@ -20,8 +20,9 @@
 }
 
 label {
+    display: flex;
     line-height: 20px;
-    vertical-align: middle;
+    font-size: 20px;
 }
 
 [type="checkbox"] ~ label::before {
@@ -31,6 +32,7 @@ label {
     height: 20px;
     background-image: url(./images/checkbox-unchecked.png);
     background-size: contain;
+    margin-right: 6px;
 }
 
 [type="checkbox"]:checked ~ label::before {
