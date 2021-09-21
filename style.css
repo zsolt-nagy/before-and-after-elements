@@ -1,5 +1,5 @@
 .title {
-    border: 2px dotted red;
+    border: 5px ridge darkgrey;
 }
 
 .title::before {
